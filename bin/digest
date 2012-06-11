@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import json
+
+quotes = {}
+author = "Oscar Wilde"
+
+fil = "%s" % sys.argv[2]
+
+write = open(fil, 'w')
+
+def digest_quotes(dirc):
+    for fil in os.listdir(dirc):
+        fd = json.load(open("%s/%s" % (dirc, fil), 'r'))
+        yield fd
+
+for obj in digest_quotes(sys.argv[1]):
+    quotes.update(obj)
+
+for play in quotes:
+    for act in quotes[play]:
+        for quote in quotes[play][act]:
+            quote = quote.encode('utf-8')
+            write.write("\"%s\"\n" % quote)
+            write.write("\n")
+            write.write(" -- %s (%s)\n" % ( author, play ))
+            write.write("%\n")

@@ -1,0 +1,16 @@
+Source: fortunes-wilde
+Section: games
+Priority: optional
+Maintainer: Paul Tagliamonte <paultag@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
+Homepage: http://pault.ag/
+
+Package: fortunes-wilde
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: blergh blat blachs
+ this package contains my wrappers for sbuild, for my own use
+ and stuff. this is mostly filler text.
+ .
+ Extra line to trick lintian.
