@@ -9,8 +9,8 @@ Homepage: http://pault.ag/
 Package: fortunes-wilde
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: blergh blat blachs
- this package contains my wrappers for sbuild, for my own use
- and stuff. this is mostly filler text.
+Description: fortune files from Oscar Wilde
+ A set of fortune quotes from the (great) Oscar Wilde featuring an asortment
+ of quotes from a number of works.
  .
- Extra line to trick lintian.
+ This package is far too clever for it's own good.
