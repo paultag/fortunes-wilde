@@ -8,7 +8,7 @@ Homepage: http://pault.ag/
 
 Package: fortunes-wilde
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, fortune
 Description: fortune files from Oscar Wilde
  A set of fortune quotes from the (great) Oscar Wilde featuring an asortment
  of quotes from a number of works.
